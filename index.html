@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H.A.C.K. CORTEX - Live Member Count</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #00ffcc;
+      font-family: 'Share Tech Mono', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 8px #00ffcc;
+    }
+    .count-container {
+      margin-top: 2rem;
+      padding: 2rem;
+      background-color: #111;
+      border: 2px solid #00ffcc;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00ffcc44;
+    }
+    .number {
+      font-size: 4rem;
+      margin: 1rem 0;
+    }
+    .label {
+      font-size: 1.2rem;
+      color: #88ffee;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 H.A.C.K. CORTEX</h1>
+  <div class="count-container">
+    <div class="label">Total Members:</div>
+    <div class="number" id="memberCount">132</div>
+    <div class="label">Next Available Member Number:</div>
+    <div class="number" id="nextNumber">133</div>
+  </div>
+
+  <script>
+    // You can later replace this with a dynamic fetch from a database or API
+    let currentMemberCount = 132;
+    document.getElementById("memberCount").textContent = currentMemberCount;
+    document.getElementById("nextNumber").textContent = currentMemberCount + 1;
+  </script>
+</body>
+</html>
